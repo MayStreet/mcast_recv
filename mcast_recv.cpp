@@ -336,7 +336,7 @@ int main(int argc, char* argv[]) {
   }
 
 
-#ifdef HAVE_SO_REUSEPORT
+#ifdef SO_REUSEPORT
   result = socket.AddOption(SOL_SOCKET, SO_REUSEPORT, 1);
 #else
   result = true;
